@@ -53,7 +53,7 @@ public class Login extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html");
 		
-		out.print("用户名：" + username );
+		out.print("用户名：hehe weism " + username );
 		out.print("密码：" + password);
 		out.flush();
 		out.close();

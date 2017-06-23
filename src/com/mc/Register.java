@@ -20,7 +20,7 @@ public class Register extends HttpServlet {
 	
 	private String name;
 	private String pass;
-	private String confirm;
+	//private String confirm;
        
     /**
      * @see HttpServlet#HttpServlet()
