@@ -8,8 +8,7 @@
 <body>
 	 当前时间12: <br>
     <%
-    Date date = new Date();
-    out.write(date.toLocaleString());
+
     %>
 </body>
 </html>

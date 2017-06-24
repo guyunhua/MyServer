@@ -7,9 +7,9 @@ import db.DBManager;
 
 //
 public class Service {
-	///µÇÂ½
+	///ï¿½ï¿½Â½
 	public Boolean login(String username, String password){
-		String logSql = "select * from users where name ='" + username
+		String logSql = "select * from users where username ='" + username
 				+ "' and password = '" + password + "'";
 		
 		DBManager sql = DBManager.createInstance();
@@ -29,9 +29,9 @@ public class Service {
 		sql.closeDB();
 		return false;
 	}
-	///×¢²á
+	///×¢ï¿½ï¿½
 	public Boolean register(String username, String password){
-		String checkSql = "select * from users where name ='" + username + "'";
+		String checkSql = "select * from users where username ='" + username + "'";
 		String regSql = "insert into users values('" + username + "','" + password +"')";
 		
 		DBManager sql = DBManager.createInstance();

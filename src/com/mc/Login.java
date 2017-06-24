@@ -36,6 +36,11 @@ public class Login extends HttpServlet {
 		String username = request.getParameter("username");
 		//username = new String(username.getBytes("ISO-8859-1"), "UTF-8");
 		String password = request.getParameter("password");
+		if(username == null || password == null){
+			out.print("用户名密码不能为空");
+			System.out.println("用户名密码不能为空");
+			return;
+		}
 		System.out.println(username + "--" + password);
 		
 		Service serv = new Service();
@@ -53,8 +58,8 @@ public class Login extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html");
 		
-		out.print("�û�����" + username );
-		out.print("���룺" + password);
+		out.print("�û�����" + username );
+		out.print("���룺" + password);
 		out.flush();
 		out.close();
 	}
